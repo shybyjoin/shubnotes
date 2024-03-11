@@ -7,11 +7,11 @@ SCOPES = ['https://www.googleapis.com/auth/drive']
 
 service = Create_Service(CLIENT_SECRET_FILE, API_NAME,API_VERION,SCOPES)
 
-national_parks = [ 'shub']
+folders = [ 'shub_folder']
 
-for national_parks in national_parks:
+for folder in folders:
         file_metadata = {
-                'name': national_parks,
+                'name': folder,
                 'mimeType' : 'application/vnd.google-apps.folder'
         # ' parents': []
         }
